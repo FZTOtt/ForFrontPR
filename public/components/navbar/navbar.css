@@ -1,0 +1,80 @@
+.innernav {
+    position: relative;
+    min-width: 1024px;
+    border-bottom: 1px solid gray;
+    height: 60px;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+}
+.leftside {
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+}
+
+.linkbar {
+    display: flex;
+    list-style: none;
+    /* padding-left: 200px; */
+    margin: 0;
+}
+
+.navlink {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.navlink a {
+    padding: 0 8px;
+    display: block;
+    text-align: center;
+}
+
+.rightside {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
+.register {
+    grid-row: 2
+}
+
+.rightside div {
+    margin-right: 16px;
+}
+
+.advert {
+    min-width: 252px;
+}
+
+.primary-button{
+    background-color: var(--background-color-button-main);
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+.primary-button:hover {
+    background-color: var(--background-color-button-main-hover);
+}
+
+.secondary-button {
+    background-color: var(--background-color-button-secondary);
+    color: var(--backgound-collor-button-main);
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+.secondary-button:hover {
+    background-color: var(--background-color-button-secondary-hover);
+}
