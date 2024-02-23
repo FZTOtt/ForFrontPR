@@ -6,63 +6,62 @@
     <title>Navbar</title>
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="navbar.css">
+    <script defer src="navbar.js"></script>
 </head>
 <body>
-    <header class="innernav">
-        <nav>
-            <div class="leftside">
-                <ul class="linkbar">
-                    <li class="navlink">
-                        <a>
+    <header class="nav">
+        <div class="nav__leftside">
+                <ul class="nav__linkbar">
+                    <li class="nav__link">
+                        <a href="https://qna.habr.com/q/230700">
                             Аренда
                         </a>
                     </li>
-                    <li class="navlink">
+                    <li class="nav__link">
                         <a>
                             Продажа
                         </a>
                     </li>
-                    <li class="navlink">
+                    <li class="nav__link">
                         <a>
                             Новостройки
                         </a>
                     </li>
-                    <li class="navlink">
+                    <li class="nav__link">
                         <a>
                             Дома и участки
                         </a>
                     </li>
-                    <li class="navlink">
+                    <li class="nav__link">
                         <a>
                             Коммерческая
                         </a>
                     </li>
-                    <li class="navlink">
+                    <li class="nav__link">
                         <a>
                             Ипотека
                         </a>
                     </li>
-                    <li class="navlink">
+                    <li class="nav__link">
                         <a>
                             Сервисы
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="rightside">
-                <!-- переделать в gap вместо диваков -->
-                <a href="" class="advert primary-button button-border-radius_sm">
-                    <span>
+            <div class="nav__rightside">
+                <button class="button_primary button_border-radius_sm nav__rightside_primary_button button_size_sm">
+                    
                         + Разместить объявление
-                    </span>
-                </a>
-                <a href="" class="registration secondary-button button-border-radius_sm">
-                    <span>
+                    
+                </button>
+                <button class="button_secondary button_border-radius_sm nav__rightside_secondary_button button_size_sm">
+                    
                         Войти
-                    </span>
-                </a>
-            </div>
-        </nav>
+                    
+                </button>
+        </div>
     </header>
+    
 </body>
 </html>

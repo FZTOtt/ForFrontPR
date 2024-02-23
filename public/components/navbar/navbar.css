@@ -1,80 +1,106 @@
-.innernav {
-    position: relative;
-    min-width: 1024px;
-    border-bottom: 1px solid gray;
+.nav {
+    border-bottom: var(--nav-border-bottom-line-width) 
+    var(--nav-border-bottom-line-style) 
+    var(--nav-border-bottom-line-color);
     height: 60px;
-}
-
-nav {
-    height: 100%;
     display: flex;
 }
-.leftside {
+
+.nav__leftside {
     padding: 0 20px;
     margin: 0 auto;
     height: 100%;
     display: flex;
 }
 
-.linkbar {
+.nav__linkbar {
     display: flex;
     list-style: none;
-    /* padding-left: 200px; */
     margin: 0;
 }
 
-.navlink {
+.nav__link {
     float: left;
     display: flex;
     align-items: center;
 }
 
-.navlink a {
+.nav__link a {
     padding: 0 8px;
     display: block;
     text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
 }
 
-.rightside {
+.nav__rightside {
     display: grid;
     gap: 10px;
     grid-template-columns: auto auto;
-    position: relative;
     align-items: center;
     justify-content: flex-start;
     margin-right: auto;
 }
 
-.register {
-    grid-row: 2
-}
-
-.rightside div {
-    margin-right: 16px;
-}
-
-.advert {
-    min-width: 252px;
-}
-
-.primary-button{
+.button_primary {
     background-color: var(--background-color-button-main);
-    color: white;
-    padding: 8px 15px;
-    text-decoration: none;
+    color: var(--color-button-main);
 }
 
-.primary-button:hover {
+button {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: var(--button-font-family-main);
+    font-size: var(--button-font-size);
+}
+
+.button_size_sm {
+    padding: var(--button-padding_sm);
+    font-size: var(--button-font-size_sm);
+}
+
+.button_size_md {
+    padding: var(--button-padding_md);
+    font-size: var(--button-font-size_md);
+}
+
+.button_size_lg {
+    padding: var(--button-padding_lg);
+    font-size: var(--button-font-size_lg);
+}
+
+.button_border-radius_md {
+    border-radius: var(--button-border-radius_md)
+}
+
+.button_border-radius_sm {
+    border-radius: var(--button-border-radius_sm)
+}
+
+.nav__rightside_primary_button:hover {
     background-color: var(--background-color-button-main-hover);
 }
 
-.secondary-button {
-    background-color: var(--background-color-button-secondary);
-    color: var(--backgound-collor-button-main);
-    padding: 8px 15px;
-    text-decoration: none;
+.button_text {
+    background-color: transparent;
+    color: black;
 }
 
-.secondary-button:hover {
+.button_contrast {
+    border-color: #152242;
+    background-color: white;
+}
+
+.button_secondary {
+    background-color: var(--background-color-button-secondary);
+    color: var(--color-button-secodary);
+}
+
+.nav__rightside_secondary_button:hover {
     background-color: var(--background-color-button-secondary-hover);
 }
